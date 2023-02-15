@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="HashTek.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>HashTek</title>
+</head>
+<body>
+    <section class="header">
+        <a href=""><img src="C:\Users\Abhay Singh\Downloads\hashtag-sign-round-icon.png" class="logo" alt="">HashTek</a>
+        <div class="navbar">
+            <ul>
+                <!-- <li><a href="HashTek.html"><i class="fa-solid fa-hashtag"></i>HashTek</a></li> -->
+                <li><a href="HashTek.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <div class="Dropdown">
+                    <button class="dropbtn" onclick="myCourses()">Courses
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="myCourses">
+                      <a href="#">Forntend Development</a>
+                      <a href="#">FullStack Development</a>
+                      <!-- <a href="#">Link 3</a> -->
+                    </div>
+                    </div>
+                <!-- <li><a href="Courses.html">Courses</a></li> -->
+
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+
+        </div>
+
+    </section>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myCourses() {
+          document.getElementById("myCourses").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myCourses = document.getElementById("myCourses");
+            if (myCourses.classList.contains('show')) {
+              myCourses.classList.remove('show');
+            }
+          }
+        }
+        </script>
+    
+</body>
+<script src="HashTek.js"><script>
+</html>
